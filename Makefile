@@ -1,6 +1,7 @@
-.PHONEY: present clean all rpackages
+.PHONEY: present clean all rpackages publish unpublish
 
 presentationname=MawdsleyJayHainesRSE2017
+pubdoc=./docs/index.html
 
 all: $(presentationname).html 
 
@@ -16,8 +17,13 @@ clean:
 rpackages:
 	Rscript installRpackages.R
 
-publish: ./docs/index.html
+publish: $(pubdoc)
 
-./docs/index.html: $(presentationname).html
+$(pubdoc): $(presentationname).html
 	cp $< $@
+	@echo "Now commit and push to publish changes"
+
+unpublish:
+	rm $(pubdoc)
+	@echo "Now commit and push to unpublish presentation"
 
