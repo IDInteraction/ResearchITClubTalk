@@ -31,6 +31,16 @@ output:
       + getting tables how you want them
       + collaboration; e.g. working with Overleaf
 
+## 
+
+![](figs/ExamplePaperSource.png)
+
+##
+
+![](figs/ExamplePaper.png)
+
+
+
 ## What if you can't do everything in R?  
 
 * Here there be dragons
