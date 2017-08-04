@@ -1,4 +1,4 @@
-.PHONEY: present clean all
+.PHONEY: present clean all rpackages
 
 presentationname=MawdsleyJayHainesRSE2017
 
@@ -12,4 +12,7 @@ present: $(presentationname).html
 
 clean:
 	rm -f $(presentationname).html 
+
+rpackages:
+	Rscript installRpackages.R
 
