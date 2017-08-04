@@ -16,6 +16,8 @@ clean:
 rpackages:
 	Rscript installRpackages.R
 
-publish:
-	cp $(presentationname).html ./docs/
+publish: ./docs/index.html
+
+./docs/index.html: $(presentationname).html
+	cp $< $@
 
