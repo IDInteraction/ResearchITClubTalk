@@ -43,7 +43,6 @@ output:
 
 ## What if you can't do everything in R?  
 
-* Here there be dragons
 * Complex dependencies
 * Time consuming-analyses
 * Long pipelines
@@ -55,8 +54,6 @@ output:
   + The final module makes the paper
 * Join outputs of containers with Makefile
 
-## 
-
 
 ## Example - IDInteraction
 
@@ -65,7 +62,7 @@ output:
 
 ![](figs/P07ScreenTablet.jpg) 
 
----
+##
 
 ![](figs/WorkflowPipeline.png)
 
@@ -103,8 +100,11 @@ output:
 
 ## Challenges
 
-Additional complexity
-Building the paper can be a challenge even with Docker
+* Additional complexity
+* Requires Docker
+* Top-level makefile runs on native system
+  + Difficult to move from Linux --> Windows
+
 
 ## Benefits
 * Transparency
@@ -114,14 +114,13 @@ Building the paper can be a challenge even with Docker
 
 
 
-[](Good figures:  Heath Robinson or Wallis and Gromit contraption?)
+[](Good figures to include:  Heath Robinson or Wallis and Gromit contraption?)
   
-
+[](Abstract below - this won't appear in the presentation)
 [](Good software engineering practice improves the robustness of the toolchain. A logical extension of this is to treat the manuscript itself as an integrated part of the software project. Tools such as Knitr allow us to include the code that produces the results of our analysis in the LaTeX source of the manuscript.)
 
 [](Through a case study, we explain how we have done this, using a combination of Makefiles, Docker images and Knitr. We will discuss some of the challenges in this approach, such as managing complex software dependencies and scripting our analysis steps.)
 
-## 
 
 ## Caroline's wrap up
 
