@@ -24,3 +24,4 @@ To take the presentation down:
 
 `make unpublish` and then commit and push
 
+(Will switch to using Travis to publish once the repository is public)
