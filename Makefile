@@ -28,6 +28,6 @@ $(pubdoc): $(presentationname).html $(figures)
 
 unpublish:
 	rm $(pubdoc)
-	rm -f ./docs/figs/*.png
+	rm -f ./docs/figs/*.png ./docs/figs/*.jpg
 	@echo "Now commit and push to unpublish presentation"
 
