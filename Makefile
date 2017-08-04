@@ -27,7 +27,7 @@ $(pubdoc): $(presentationname).html $(figures)
 	@echo "Now commit and push to publish changes"
 
 unpublish:
-	rm $(pubdoc)
+	rm -f $(pubdoc)
 	rm -f ./docs/figs/*.png ./docs/figs/*.jpg
 	@echo "Now commit and push to unpublish presentation"
 
