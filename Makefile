@@ -1,11 +1,10 @@
-.PHONEY: present clean all rpackages publish unpublish
+.PHONEY: present clean all rpackages publish unpublish clean
 
 presentationname=MawdsleyJayHainesRSE2017
 pubdoc=./docs/index.html
 figures=$(wildcard figs/*.png) $(wildcard figs/*.jpg)
 
 all: $(presentationname).html 
-	echo $(figures)
 
 $(presentationname).html: $(presentationname).Rmd $(figures)
 	Rscript -e "rmarkdown::render('$<')"
