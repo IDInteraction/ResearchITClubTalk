@@ -16,3 +16,6 @@ clean:
 rpackages:
 	Rscript installRpackages.R
 
+publish:
+	cp $(presentationname).html ./docs/
+
