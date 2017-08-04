@@ -1,0 +1,76 @@
+---
+title: "Reproducible Research <b>is</b> Research Software Engineering"
+author: "David Mawdsley, Robert Haines and Caroline Jay"
+date: "RSE 2017 Conference<p><img src='http://assets.manchester.ac.uk/logos/hi-res/TAB_UNI_MAIN_logo/White_backgrounds/TAB_col_white_background.png' style='border:0px solid black' width='50%'></p>"
+output: 
+  revealjs::revealjs_presentation:
+    transition: fade
+    theme: solarize
+    fig_height: 6
+    self_contained: true
+    reveal_options:
+      controls: false
+---
+
+## Caroline's part
+
+* Set background etc.
+
+## David's part
+
+[](Section aim: To explain the idea of knitr++; the benefits and challenges.)
+
+## Self-contained reproducible research papers
+
+* Easier 
+* Everything is in R; only external dependency is the data
+  + In principle (pretty much) a solved problem
+    + Some friction points:
+      + package versions (thow everything in Docker / Packrat)
+      [](Docker would be safer, since some packages call external libraries)
+      + getting tables how you want them
+      + collaboration; e.g. working with Overleaf
+
+## What if you can't do everything in R?  
+
+* Here there be dragons
+* Complex dependencies
+* Time consuming-analyses
+* Long pipelines
+
+## Our approach
+
+* Make modular by containerising each step
+  + Reusable, reproducible
+  + The final module makes the paper
+* Join outputs of containers with Makefile
+
+## 
+
+Include diagram slides from Dockerworkshop of pipeline
+
+## Challenges
+
+Additional complexity
+Building the paper can be a challenge even with Docker
+
+## Benefits
+* Transparency
+* Every figure can be traced back to its source
+* Reusability and extensibility
+* RSE is an integral part of the paper production process ==> appropriate credit
+
+
+
+[](Good figures:  Heath Robinson or Wallis and Gromit contraption?)
+  
+
+[](Good software engineering practice improves the robustness of the toolchain. A logical extension of this is to treat the manuscript itself as an integrated part of the software project. Tools such as Knitr allow us to include the code that produces the results of our analysis in the LaTeX source of the manuscript.)
+
+[](Through a case study, we explain how we have done this, using a combination of Makefiles, Docker images and Knitr. We will discuss some of the challenges in this approach, such as managing complex software dependencies and scripting our analysis steps.)
+
+## 
+
+## Caroline's wrap up
+
+* Conclusions
