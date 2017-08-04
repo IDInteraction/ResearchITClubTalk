@@ -2,10 +2,11 @@
 
 presentationname=MawdsleyJayHainesRSE2017
 pubdoc=./docs/index.html
+figures=$(wildcard figs/*.png)
 
 all: $(presentationname).html 
 
-$(presentationname).html: $(presentationname).Rmd 
+$(presentationname).html: $(presentationname).Rmd $(figures)
 	Rscript -e "rmarkdown::render('$<')"
 
 present: $(presentationname).html
@@ -19,11 +20,13 @@ rpackages:
 
 publish: $(pubdoc)
 
-$(pubdoc): $(presentationname).html
+$(pubdoc): $(presentationname).html $(figures)
 	cp $< $@
+	cp $(wordlist 2, 9999, $^) ./docs/figs/
 	@echo "Now commit and push to publish changes"
 
 unpublish:
 	rm $(pubdoc)
+	rm -f ./docs/figs/*.png
 	@echo "Now commit and push to unpublish presentation"
 
