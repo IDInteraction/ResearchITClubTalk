@@ -16,7 +16,7 @@ The presentation can be built with
 To view the presentation locally:
 `make present`
 
-To publish to github pages (where it will appear at [http://idinteraction.cs.manchester.ac.uk/RSE2017Talk/](http://idinteraction.cs.manchester.ac.uk/RSE2017Talk/):
+To publish to github pages (where it will appear at [http://idinteraction.cs.manchester.ac.uk/RSE2017Talk/](http://idinteraction.cs.manchester.ac.uk/RSE2017Talk/)):
 
 `make publish` and then commit and push
 
@@ -24,4 +24,6 @@ To take the presentation down:
 
 `make unpublish` and then commit and push
 
-(Will switch to using Travis to publish once the repository is public)
+It takes a few minutes after pushing the (un)published repository for it to update on github pages.
+
+(I will switch to using Travis to publish once the repository is public)
