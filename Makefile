@@ -2,9 +2,10 @@
 
 presentationname=MawdsleyJayHainesRSE2017
 pubdoc=./docs/index.html
-figures=$(wildcard figs/*.png)
+figures=$(wildcard figs/*.png) $(wildcard figs/*.jpg)
 
 all: $(presentationname).html 
+	echo $(figures)
 
 $(presentationname).html: $(presentationname).Rmd $(figures)
 	Rscript -e "rmarkdown::render('$<')"

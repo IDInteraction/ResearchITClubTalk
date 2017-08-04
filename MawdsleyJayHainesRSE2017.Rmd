@@ -57,7 +57,49 @@ output:
 
 ## 
 
-Include diagram slides from Dockerworkshop of pipeline
+
+## Example - IDInteraction
+
+- Automate the coding of behaviours
+- This is _really_ slow and tedious to do by hand.
+
+![](figs/P07ScreenTablet.jpg) 
+
+---
+
+![](figs/WorkflowPipeline.png)
+
+
+## Docker images
+- Each module contains its own Makefile
+- Example: object tracking
+   
+[](Discuss aim of experiment, data source, processing workflow)
+
+![](figs/ObjectTracking0.png)
+
+
+## Docker images {data-transition="none"}
+- Each module contains its own Makefile
+- Example: object tracking
+   
+[](Discuss aim of experiment, data source, processing workflow)
+
+![](figs/ObjectTracking1.png)
+
+## Docker images {data-transition="none"}
+
+- Each module contains its own Makefile
+- Example: object tracking
+   
+
+![](figs/ObjectTracking2.png)
+
+##
+
+![](figs/WorkflowContainers.png)
+
+[](Each module is self-contained; can use different versions of libraries, e.g. OpenCV)  
 
 ## Challenges
 
