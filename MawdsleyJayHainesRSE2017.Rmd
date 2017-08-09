@@ -1,5 +1,5 @@
 ---
-title: "Reproducible Research <b>is</b> Research Software Engineering"
+title: "Reproducible Research <p><b>is</b></p> <p>Research Software Engineering</p>"
 author: "David Mawdsley, Robert Haines and Caroline Jay"
 date: "RSE 2017 Conference<p><img src='http://assets.manchester.ac.uk/logos/hi-res/TAB_UNI_MAIN_logo/White_backgrounds/TAB_col_white_background.png' style='border:0px solid black' width='50%'></p>"
 output: 
@@ -24,12 +24,12 @@ output:
 
 * Easier 
 * Everything is in R; only external dependency is the data
-  + In principle (pretty much) a solved problem
-    + Some friction points:
-      + package versions (thow everything in Docker / Packrat)
-      [](Docker would be safer, since some packages call external libraries)
-      + getting tables how you want them
-      + collaboration; e.g. working with Overleaf
+    + In principle (pretty much) a solved problem
+* Some friction points:
+    + package versions (thow everything in Docker / Packrat)
+    [](Docker would be safer, since some packages call external libraries)
+    + getting tables how you want them
+    + collaboration; e.g. working with Overleaf
 
 ## 
 
@@ -46,6 +46,8 @@ output:
 * Complex dependencies
 * Time consuming-analyses
 * Long pipelines
+
+[](Good figures to include:  Heath Robinson or Wallis and Gromit contraption?)
 
 ## Our approach
 
@@ -103,6 +105,7 @@ output:
 * Additional complexity
 * Requires Docker
 * Top-level makefile runs on native system
+***FIXME*** Difficult for _development_ not use
   + Difficult to move from Linux --> Windows
 
 
@@ -113,15 +116,43 @@ output:
 * RSE is an integral part of the paper production process ==> appropriate credit
 
 
-
-[](Good figures to include:  Heath Robinson or Wallis and Gromit contraption?)
   
 [](Abstract below - this won't appear in the presentation)
 [](Good software engineering practice improves the robustness of the toolchain. A logical extension of this is to treat the manuscript itself as an integrated part of the software project. Tools such as Knitr allow us to include the code that produces the results of our analysis in the LaTeX source of the manuscript.)
 
 [](Through a case study, we explain how we have done this, using a combination of Makefiles, Docker images and Knitr. We will discuss some of the challenges in this approach, such as managing complex software dependencies and scripting our analysis steps.)
 
+[](Me to discuss - re-running analysis, re-run with new bounding box, re-run with new videos.  Results different, but paper largely the same.  )
 
 ## Caroline's wrap up
+* RSEs get credit for paper, since _producing_ a significant part of the paper
+* This model lets us update results more easily; but requires rethinking of publication model
+* This is worth doing since it allows more effective and efficient science, which will advance knowledge more quickly
 
-* Conclusions
+## Caroline's wrap up (2)
+
+* RSEs involved
+* Aim is to do science well.
+* Issue of software credit (largely) goes
+* Efficiently advancing science
+* But then the issue is the publication model
+  + Maximising the gain of this approach requires us to reconsider this
+  + But should reconsider it since it allows us to do our science more efficiently and better
+  + Something that's going to be enabled by moving away from traditional physical paper approach.
+ + Doesn't replace paper narrative. 
+ + different end product from a Jupyter notebook
+ 
+
+
+[](Notes: Finish technical bit with a description of what this allows other people to do - allows other people to re-run (some) of our analysis.  This is how we've made the paper - what does this mean for another researcher who comes to this work - they can rerun these aspects completely.  But bbox placed by a human - someone could explore how variation in placement of bbox affected results, could rerun and compare.  A new experiment, using our paper, updating our paper.  Another potential novel contribution, from the same toolchain.   
+Don't need to talk about the value of cointainerisation - talk more about the value of making the paper.  
+Under the current publishing model - the publication is static.   One of the potential benefits is moving away from one-shot papers.  
+
+Gives us extra stuff, but how many reviewers will build pipeline.  Probably not many.  The value is improving the research (incremental) process; causes us to reflect on the publication model.  What we can't do with (most) standard journals is publish an almost identical looking paper, but with a different data-set.  
+
+Doing this because it's the _right_ thing to do, but what's the value in it?
+Not possible to build these papers without RSEs
+Old model - one thinks of something, writes software. Stops. Write paper
+This approach blends this through; no gap between software and paper - same process.  The paper _is_ almost software.
+
+)
