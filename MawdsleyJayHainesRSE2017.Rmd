@@ -107,6 +107,7 @@ output:
 * Requires Docker
 * Top-level makefile can become unwieldy.
   	+ Investigating workflow languages as an alternative.
+* Error handling
 
 ## Benefits
 * Transparency
