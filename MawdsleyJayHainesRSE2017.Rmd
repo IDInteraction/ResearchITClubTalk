@@ -16,19 +16,22 @@ output:
 
 * Set background etc.
 
-## David's part
+[](Abstract below - this won't appear in the presentation)
+[](Good software engineering practice improves the robustness of the toolchain. A logical extension of this is to treat the manuscript itself as an integrated part of the software project. Tools such as Knitr allow us to include the code that produces the results of our analysis in the LaTeX source of the manuscript.)
 
-[](Section aim: To explain the idea of knitr++; the benefits and challenges.)
+[](Through a case study, we explain how we have done this, using a combination of Makefiles, Docker images and Knitr. We will discuss some of the challenges in this approach, such as managing complex software dependencies and scripting our analysis steps.)
+
+
 
 ## Self-contained reproducible research papers
 
-* Easier 
+* We can write our paper in LaTeX or Markdown, including R code as required
 * Everything is in R; only external dependency is the data
     + In principle (pretty much) a solved problem
 * Some friction points:
-    + package versions (thow everything in Docker / Packrat)
+    + software versions &rarr; Docker or Packrat 
     [](Docker would be safer, since some packages call external libraries)
-    + getting tables how you want them
+    + formatting, e.g. tables
     + collaboration; e.g. working with Overleaf
 
 ## 
@@ -38,8 +41,6 @@ output:
 ##
 
 ![](figs/ExamplePaper.png)
-
-
 
 ## What if you can't do everything in R?  
 
@@ -51,11 +52,10 @@ output:
 
 ## Our approach
 
-* Make modular by containerising each step
+* Make modular by containerising each step using Docker
   + Reusable, reproducible
   + The final module makes the paper
 * Join outputs of containers with Makefile
-
 
 ## Example - IDInteraction
 
@@ -103,26 +103,20 @@ output:
 ## Challenges
 
 * Additional complexity
+  	+ Pipeline can be difficult to debug
 * Requires Docker
-* Top-level makefile runs on native system
-***FIXME*** Difficult for _development_ not use
-  + Difficult to move from Linux --> Windows
-
+* Top-level makefile can become unwieldy.
+  	+ Investigating workflow languages as an alternative.
 
 ## Benefits
 * Transparency
-* Every figure can be traced back to its source
-* Reusability and extensibility
-* RSE is an integral part of the paper production process ==> appropriate credit
+* Allows others to re-run and extend our analyses
+  	+ Re-run, to verify
+	+ Re-run, to modify (e.g. bounding box)
+	+ Re-run, to extend (e.g. new data, new tracking methods)
+* Moves away from the static "one-shot" publication
+* RSE is an integral part of the paper production process &rarr; appropriate credit
 
-
-  
-[](Abstract below - this won't appear in the presentation)
-[](Good software engineering practice improves the robustness of the toolchain. A logical extension of this is to treat the manuscript itself as an integrated part of the software project. Tools such as Knitr allow us to include the code that produces the results of our analysis in the LaTeX source of the manuscript.)
-
-[](Through a case study, we explain how we have done this, using a combination of Makefiles, Docker images and Knitr. We will discuss some of the challenges in this approach, such as managing complex software dependencies and scripting our analysis steps.)
-
-[](Me to discuss - re-running analysis, re-run with new bounding box, re-run with new videos.  Results different, but paper largely the same.  )
 
 ## Caroline's wrap up
 * RSEs get credit for paper, since _producing_ a significant part of the paper
@@ -144,8 +138,8 @@ output:
  
 
 
-[](Notes: Finish technical bit with a description of what this allows other people to do - allows other people to re-run (some) of our analysis.  This is how we've made the paper - what does this mean for another researcher who comes to this work - they can rerun these aspects completely.  But bbox placed by a human - someone could explore how variation in placement of bbox affected results, could rerun and compare.  A new experiment, using our paper, updating our paper.  Another potential novel contribution, from the same toolchain.   
-Don't need to talk about the value of cointainerisation - talk more about the value of making the paper.  
+[](Notes: Finish technical bit with a description of what this allows other people to do - allows other people to re-run some of our analysis.  This is how we've made the paper - what does this mean for another researcher who comes to this work - they can rerun these aspects completely.  But bbox placed by a human - someone could explore how variation in placement of bbox affected results, could rerun and compare.  A new experiment, using our paper, updating our paper.  Another potential novel contribution, from the same tool chain.   
+Don't need to talk about the value of containerisation - talk more about the value of making the paper.  
 Under the current publishing model - the publication is static.   One of the potential benefits is moving away from one-shot papers.  
 
 Gives us extra stuff, but how many reviewers will build pipeline.  Probably not many.  The value is improving the research (incremental) process; causes us to reflect on the publication model.  What we can't do with (most) standard journals is publish an almost identical looking paper, but with a different data-set.  
