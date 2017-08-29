@@ -35,3 +35,4 @@ pdf:
 	@echo "To convert to pdf, make publish and then go to"
 	@echo "http://idinteraction.cs.manchester.ac.uk/RSE2017Talk/?print-pdf#/"
 	@echo "using Chrome(ium), and then print to pdf"
+	@echo "For full instructions, see https://github.com/hakimel/reveal.js#pdf-export"
