@@ -1,6 +1,6 @@
 .PHONEY: present clean all rpackages publish unpublish clean
 
-presentationname=MawdsleyJayHainesRSE2017
+presentationname=ReproducibleResearchIsRSE
 pubdoc=./docs/index.html
 figures=$(wildcard figs/*.png) $(wildcard figs/*.jpg)
 
