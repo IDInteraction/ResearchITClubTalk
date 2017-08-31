@@ -22,7 +22,8 @@ rpackages:
 
 
 pdf:
-	@echo "To convert to pdf, make publish and then go to"
-	@echo "http://idinteraction.cs.manchester.ac.uk/RSE2017Talk/?print-pdf#/"
+	@echo "To convert to pdf, push the repository to github,"
+	@echo "wait for Travis to build the presentation and then go to"
+	@echo "http://idinteraction.cs.manchester.ac.uk/RSE2017Talk/ReproducibleResearchIsRSE.html?print-pdf#/"
 	@echo "using Chrome(ium), and then print to pdf"
 	@echo "For full instructions, see https://github.com/hakimel/reveal.js#pdf-export"
