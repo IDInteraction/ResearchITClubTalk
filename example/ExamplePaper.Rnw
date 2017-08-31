@@ -1,0 +1,22 @@
+\documentclass[a4paper,11pt]{article}
+\title{A reproducible paper} 
+\date{}
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+This is an example reproducible paper.  The compiled pdf looks like a normal paper.
+
+<<echo=FALSE>>=
+data(cars)
+regression <- lm(dist ~ speed, data = cars)
+@
+
+Figure \ref{fig:graph} shows the relationship between speed and stopping distance.  An increase of 1 mph in speed increases the stopping distance by \Sexpr{round(coef(regression)[2], digits=2)} feet.
+
+<<graph, echo=FALSE, fig.cap="Relationship between stopping distance and speed", fig.height=6, fig.pos='htb!'>>=
+with(cars, plot(speed, dist))
+@
+
+\end{document}

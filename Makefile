@@ -1,13 +1,21 @@
-.PHONEY: present clean all rpackages publish unpublish clean
+.PHONEY: present clean all rpackages publish unpublish clean exampledoc
 
 presentationname=ReproducibleResearchIsRSE
 pubdoc=./docs/index.html
-figures=$(wildcard figs/*.png) $(wildcard figs/*.jpg)
+figures=$(wildcard figs/*.png) $(wildcard figs/*.jpg) 
+SUBDIRS=example
 
-all: $(presentationname).html 
+all:  $(presentationname).html 
 
-$(presentationname).html: $(presentationname).Rmd $(figures)
+exampledoc:
+	$(MAKE) -C example
+
+$(presentationname).html: $(presentationname).Rmd 
 	Rscript -e "rmarkdown::render('$<')"
+
+$(presentationname).Rmd: $(figures) exampledoc
+	
+subdirs: $(SUBDIRS)
 
 present: $(presentationname).html
 	chromium-browser $< &
