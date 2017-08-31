@@ -18,17 +18,7 @@ clean:
 rpackages:
 	Rscript installRpackages.R
 
-publish: $(pubdoc)
 
-$(pubdoc): $(presentationname).html $(figures)
-	cp $< $@
-	cp $(wordlist 2, 9999, $^) ./docs/figs/
-	@echo "Now commit and push to publish changes"
-
-unpublish:
-	rm -f $(pubdoc)
-	rm -f ./docs/figs/*.png ./docs/figs/*.jpg
-	@echo "Now commit and push to unpublish presentation"
 
 
 pdf:
