@@ -55,6 +55,7 @@ output:
   + Reusable, reproducible
   + The final module makes the paper
 * Join outputs of containers with Makefile
+  + Or a workflow management tool
 
 ## Example - IDInteraction
 
