@@ -16,4 +16,5 @@ The presentation can be built with
 To view the presentation locally:
 `make present`
 
-The presentation will build in Travis when pushed to github.  It will appear at [http://idinteraction.cs.manchester.ac.uk/RSE2017Talk/](http://idinteraction.cs.manchester.ac.uk/RSE2017Talk/))
+The presentation will build in Travis when pushed to github.  It is published at [http://idinteraction.cs.manchester.ac.uk/RSE2017Talk/](http://idinteraction.cs.manchester.ac.uk/RSE2017Talk/)
+
