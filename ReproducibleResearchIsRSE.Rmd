@@ -52,10 +52,10 @@ output:
 ## Our approach
 
 * Make modular by containerising each step using Docker
-  + Reusable, reproducible
-  + The final module makes the paper
+	  + Reusable, reproducible
+	  + The final module makes the paper
 * Join outputs of containers with Makefile
-  + Or a workflow management tool
+	  + Or a workflow management tool
 
 ## Example - IDInteraction
 
