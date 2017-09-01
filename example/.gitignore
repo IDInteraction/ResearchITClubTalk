@@ -1,0 +1,8 @@
+*.R
+*.aux
+*.log
+*.pdf
+*.png
+*.tex
+*.ps
+figure/*
