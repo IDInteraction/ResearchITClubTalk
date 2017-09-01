@@ -12,7 +12,7 @@ before_install:
 
 install: 
         - echo "No install needed"
-        - Rscript -e "install.packages(c('knitr', 'rmarkdown', 'revealjs'))"
+        - Rscript -e "install.packages(c('knitr', 'rmarkdown', 'revealjs', 'ggplot2'))"
         - Rscript -e "installed.packages()"
 
 script:
