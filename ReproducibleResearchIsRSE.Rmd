@@ -12,9 +12,9 @@ output:
       controls: false
 ---
 
-## Caroline's part
+## Reproducible Research
 
-* Set background etc.
+![](figs/WorkflowPipeline.png)
 
 [](Abstract below - this won't appear in the presentation)
 [](Good software engineering practice improves the robustness of the toolchain. A logical extension of this is to treat the manuscript itself as an integrated part of the software project. Tools such as Knitr allow us to include the code that produces the results of our analysis in the LaTeX source of the manuscript.)
