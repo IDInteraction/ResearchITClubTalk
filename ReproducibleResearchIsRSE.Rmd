@@ -124,11 +124,9 @@ output:
 * Moves away from the static "one-shot" publication
 * RSE is an integral part of the paper production process &rarr; appropriate credit
 
-
-## Caroline's wrap up
-* RSEs get credit for paper, since _producing_ a significant part of the paper
-* This model lets us update results more easily; but requires rethinking of publication model
-* This is worth doing since it allows more effective and efficient science, which will advance knowledge more quickly
+## A new publication model
+* Improves efficiency
+* Improves effectiveness
 
 ## Caroline's wrap up (2)
 
