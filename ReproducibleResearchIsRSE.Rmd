@@ -25,7 +25,7 @@ output:
 ## Self-contained reproducible research papers
 
 * We can write our paper in LaTeX or Markdown, including R code as required
-* Everything is in R; only external dependency is the data
+* Everything is in R; the only external dependency is the data
     + In principle (pretty much) a solved problem
 * Some friction points:
     + software versions &rarr; Docker or Packrat 
