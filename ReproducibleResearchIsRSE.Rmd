@@ -12,7 +12,7 @@ output:
       controls: false
 ---
 
-## Reproducible Research
+## Reproducible research
 
 ![](figs/WorkflowPipeline.png)
 
@@ -21,6 +21,11 @@ output:
 
 [](Through a case study, we explain how we have done this, using a combination of Makefiles, Docker images and Knitr. We will discuss some of the challenges in this approach, such as managing complex software dependencies and scripting our analysis steps.)
 
+## Publishing reproducible research
+
+* How it changes the publication model
+* Why this is a good thing for research
+* Why this is a good thing for research software engineers
 
 ## Self-contained reproducible research papers
 
