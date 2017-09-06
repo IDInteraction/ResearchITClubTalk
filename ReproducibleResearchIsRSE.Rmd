@@ -131,7 +131,7 @@ output:
 
 ## Reproducible research / research software engineering
 * Narrative remains important
-  +... and yet paper construction is becoming less a literary work, and more a software engineering project
+	+ paper construction is becoming less a literary work, and more a software engineering project
 * RSEs are integral to this process
 
 [](Notes: Finish technical bit with a description of what this allows other people to do - allows other people to re-run some of our analysis.  This is how we've made the paper - what does this mean for another researcher who comes to this work - they can rerun these aspects completely.  But bbox placed by a human - someone could explore how variation in placement of bbox affected results, could rerun and compare.  A new experiment, using our paper, updating our paper.  Another potential novel contribution, from the same tool chain.   
