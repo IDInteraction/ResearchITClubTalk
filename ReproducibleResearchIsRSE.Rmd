@@ -122,13 +122,32 @@ output:
 	+ Re-run, to extend (e.g. new data, new tracking methods)
 * Moves away from the static "one-shot" publication
 
-## A new publication model
+## A new publication model {data-transition="none"}
+* Improves reliability
+
+## A new publication model {data-transition="none"}
+* Improves reliability
+* Improves efficiency
+
+## A new publication model {data-transition="none"}
+
+* Improves reliability
+* Improves efficiency
+* Improves effectiveness
+  
+## A new publication model {data-transition="none"}
+
 * Improves reliability
 * Improves efficiency
 * Improves effectiveness
 * Accelerates progress
+  
+## Reproducible research / research software engineering {data-transition="none"}
+* Narrative remains important
+	+ paper construction is becoming less a literary work, and more a software engineering project
 
-## Reproducible research / research software engineering
+## Reproducible research / research software engineering {data-transition="none"}
+
 * Narrative remains important
 	+ paper construction is becoming less a literary work, and more a software engineering project
 * RSEs are integral to this process
