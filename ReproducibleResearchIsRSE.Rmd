@@ -111,9 +111,8 @@ output:
   	+ Pipeline can be difficult to debug
 * Requires Docker
 * Error handling
-* Top-level Makefile can become unwieldy.
+* Top-level Makefile can become unwieldy
   	+ Have started using [Nextflow](https://www.nextflow.io) for parts of the process
-	+ Using Nextflow instead of top-level Makefile and using Make for modules may be most flexible solution; easier to reconfigure workflow. 
 
 ## Benefits
 * Transparency
