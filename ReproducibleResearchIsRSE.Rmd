@@ -1,7 +1,7 @@
 ---
 title: "Reproducible Research <p><b>is</b></p> <p>Research Software Engineering</p>"
 author: "David Mawdsley, Robert Haines and Caroline Jay"
-date: "RSE 2017 Conference<p><img src='http://assets.manchester.ac.uk/logos/hi-res/TAB_UNI_MAIN_logo/White_backgrounds/TAB_col_white_background.png' style='border:0px solid black' width='50%'></p>"
+date: "Research IT Club<p><img src='http://assets.manchester.ac.uk/logos/hi-res/TAB_UNI_MAIN_logo/White_backgrounds/TAB_col_white_background.png' style='border:0px solid black' width='50%'></p>"
 output: 
   revealjs::revealjs_presentation:
     transition: fade

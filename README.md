@@ -1,5 +1,7 @@
-# RSE2017Talk
-## Presentation for the RSE conference in Manchester Sept 2017
+# Research IT Club	 
+## Presentation for the UoM Research IT club, 25 October 2017
+
+This talk is based on the [talk we gave at the 2017 RSE conference](http://idinteraction.cs.manchester.ac.uk/RSE2017Talk/)
 
 The talk is written in RMarkdown, as a revealjs presentation. 
 
@@ -16,5 +18,5 @@ The presentation can be built with
 To view the presentation locally:
 `make present`
 
-The presentation will build in Travis when pushed to github.  It is published at [http://idinteraction.cs.manchester.ac.uk/RSE2017Talk/](http://idinteraction.cs.manchester.ac.uk/RSE2017Talk/)
+The presentation will build in Travis when pushed to github.  It is published at [http://idinteraction.cs.manchester.ac.uk/ResearchITClubTalk/](http://idinteraction.cs.manchester.ac.uk/ResearchITClubTalk/)
 
