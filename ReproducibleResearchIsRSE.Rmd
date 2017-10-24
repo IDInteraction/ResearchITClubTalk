@@ -25,7 +25,7 @@ output:
 
 * How it changes the publication model
 * Why this is a good thing for research
-* Why this is a good thing for research software engineers
+* What it means for the skills pipeline
 
 ## Self-contained reproducible research papers
 
